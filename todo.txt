@@ -1,0 +1,12 @@
+MVP:
+1. take video input
+2. split into frames
+3. use https://aiven.io/developer/find-faces-with-pgvector?utm_source=youtube&utm_medium=referral&utm_content=MatthewBerman&utm_campaign=imp to find faces and save them. (dont track a face, but recogice)
+4. then find a way to create box around a selected face saved from step 3 througut the entire video.
+5. blur that box.
+6. get chat to create frontend
+
+Maybe:
+1. rewrite from python to c++ and compile to WASM, then we can host on vercel and use node workers to run the bluring. 
+2. blur from livefeed
+
