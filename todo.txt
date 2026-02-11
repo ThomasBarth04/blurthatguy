@@ -1,7 +1,8 @@
 MVP:
 1. take video input
 2. split into frames
-3. use https://aiven.io/developer/find-faces-with-pgvector?utm_source=youtube&utm_medium=referral&utm_content=MatthewBerman&utm_campaign=imp to find faces and save them. (dont track a face, but recogice)
+3. first we use haarcascade_frontalface_default.xml to find all unique faces and spilce them together as one frame.
+4. feed that one frame into a face recogition library to train a model
 4. then find a way to create box around a selected face saved from step 3 througut the entire video.
 5. blur that box.
 6. get chat to create frontend
